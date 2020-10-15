@@ -2,20 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
     <script src="js/jquery-3.5.1.min.js">
     </script>
     <script>
         $(document).ready(function(){
-            $("#p1").mouseleave(function(){
-                alert("再见，您的鼠标离开了该段落。");
+            $("button").click(function(){
+                $("p").hide(1000);
+                alert("现在段落被隐藏了");
             });
         });
     </script>
 </head>
 <body>
-
-<p id="p1">这是一个段落。</p>
-
+<button>隐藏</button>
+<p>这是一个段落，内容很少</p>
 </body>
 </html>

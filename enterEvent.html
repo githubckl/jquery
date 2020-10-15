@@ -7,15 +7,15 @@
     </script>
     <script>
         $(document).ready(function(){
-            $("#p1").mouseleave(function(){
-                alert("再见，您的鼠标离开了该段落。");
+            $("#p1").mouseenter(function(){
+                alert('您的鼠标移到了 id="p1" 的元素上!');
             });
         });
     </script>
 </head>
 <body>
 
-<p id="p1">这是一个段落。</p>
+<p id="p1">鼠标指针进入此处，会看到弹窗。</p>
 
 </body>
 </html>
